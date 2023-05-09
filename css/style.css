@@ -439,7 +439,7 @@ form .row:nth-child(3), form .row:last-child { gap: 2rem; }
     cursor: pointer;
     padding: .3rem 1rem;
     transition: background .2s;
-  }
+}
 
 .radio-text {
     font-size: .8rem;
@@ -562,8 +562,9 @@ input[type="reset"]:active { transform: rotate(180deg); }
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
     filter: blur(200px);
-    -webkit-filter: blur(200px);
     opacity: .7;
 }
 
