@@ -1,0 +1,136 @@
+html { background: var(--whitish); }
+
+header { margin-bottom: 25rem; }
+
+nav a { color: #000000; }
+.current { border-bottom: .15rem solid #000000; }
+
+main {
+    position: relative;
+    background-image: url("../assets/secondLayer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url("../assets/firstLayer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main > section:first-child {
+    position: relative;
+    bottom: 26vh;
+}
+
+section:nth-child(2) > h2 { margin-top: 0; }
+
+figcaption {
+    position: absolute;
+    bottom: 50%;
+    width: max-content;
+    margin-left: 19rem;
+    font-size: .7rem;
+    color: #494949;
+}
+
+.title {
+    position: relative;
+    color: #000000;
+    /* margin: 0; */
+}
+
+.title::before {
+    position: absolute;
+    content: "Explore";
+    bottom: 90%;
+    left: -10%;
+    font-size: .5em;
+    font-weight: 400;
+}
+
+.title::after {
+    position: absolute;
+    content: "";
+    width: .6em;
+    height: .6em;
+    bottom: 100%;
+    right: 9%;
+    background-image: url("../assets/titleAsset.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-img {
+    position: absolute;
+    width: 25em;
+    top: -3rem;
+    left: 50vw;
+    z-index: -1;
+}
+
+/* How it works section */
+
+.card-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    padding: 1.5rem;
+    height: 17rem;
+    background: var(--whitish);
+    border-radius: 10px;
+    margin: 1rem;
+    filter: drop-shadow(0px 24px 48px rgba(102, 100, 100, 0.32));
+    transition: .1s ease-in;
+}
+.card:hover { transform: scale(1.05); }
+
+.card > h3, .card > h4 {
+    margin: .5rem 0;
+    color: var(--bg);
+}
+.card > h3 { font-size: 3.5rem; }
+.card > h4 { font-size: 1.2rem; }
+
+.card > p {
+    color: var(--bg);
+    font-weight: 500;
+    line-height: 2;
+}
+
+/* Media queries */
+
+@media only screen and (max-height: 900px) {
+    header { margin-bottom:20rem; }
+    .title { margin-block: 5rem 0; }
+}
+
+@media only screen and (max-width: 700px) {
+
+    main > section:first-child { bottom: 0; } 
+
+    header { margin-bottom: 5rem; }
+    figure { display: none; }
+    .title {
+        margin-block: -2rem 6rem;
+        font-size: 3.5rem;
+    }
+    nav a { color: var(--whitish); }
+    .current { border-bottom: .15rem solid var(--whitish); }
+
+    h2 { margin-block: 10rem 3rem;}
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <title>AI Art - Create Your Own</title>
+    </head>
+    <body>
+        <a id="sr-only" href="#main-content">Jump to contents</a>
+        <!-- Only for screen readers -->
+        <header>
+            <!-- Mobile navigation start -->
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" value="false">
+                <span class="bar bar-top" data-visible="false"></span>
+                <span class="bar bar-center" data-visible="false"></span>
+                <span class="bar bar-bottom" data-visible="false"></span>
+            </button>
+            <div class="mobile-nav-side" data-visible="false"></div>
+            <!-- Closes the mobile navigation when clicked outside of the menu -->
+            <!-- Mobile navigation end -->
+            <nav id="primary-navigation" data-visible="false">
+                <a href="index.html">Home</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="create.html" class="current">Create Your Own</a>
+                <a href="contact.html">Contact Me</a>
+                <button class="hc-mode" value="false"></button>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section class="create-intro flex">
+                <h1 class="box">Create your own images</h1>
+                <article class="box">
+                    <div class="row">
+                        <h2 class="num">1.</h2>
+                        <p>Develop a concise, abstract description for the desired image, including key elements, themes, or emotions.</p>
+                    </div>
+                    <div class="row">
+                        <h2 class="num">2.</h2>
+                        <p>
+                            Provide your crafted prompt to <em><a href="https://midjourney.com/" target="_blank">Midjourney</a></em> for
+                            processing. This can either be done with a discord account through their server, or with an API.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h2 class="num">3.</h2>
+                        <p>
+                            Receive the AI-generated image, review its results, and
+                            <em><a href="https://tipseason.com/midjourney-cheatsheet/" target="_blank">adjust the prompt</a></em>
+                            if needed for improved outcomes. It typically requires 3-4 attempts with adjusted prompts to achieve the desired
+                            image using Midjourney.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="table">
+                <h2>Prompt ideas and adjustments</h2>
+                <details open>
+                    <summary>Creating prompts</summary>
+                    <table>
+                        <caption></caption>
+                        <thead>
+                            <tr>
+                                <th>Prompt</th>
+                                <th>Intended Outcome</th>
+                                <th>Example Adjustment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><em>Abstract sunset</em> : vibrant colors, warm hues, dynamic sky</td>
+                                <td>Abstract image depicting a colorful sunset scene</td>
+                                <td><b>Add</b> “circular shapes” to include geometric elements</td>
+                            </tr>
+                            <tr>
+                                <td><em>Futuristic cityscape</em> : neon light, skyscrapers, night</td>
+                                <td>Nighttime image of a futuristic city with neon light</td>
+                                <td><b>Add</b> “hovering vehicles” to enhance the futuristic theme</td>
+                            </tr>
+                            <tr>
+                                <td><em>Forest path</em> : lush greenery, sunlight, peaceful ambiance</td>
+                                <td>Serene image of a sunlit path winding through a dense forest</td>
+                                <td><b>Add</b> “woodland creatures” for increased liveliness</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+                <!-- Background assets start -->
+                <div class="bg bgPurple bgTop bgLeft"></div>
+                <div class="bg bgBlue bgMiddle bgRight"></div>
+                <div class="bg bgPurple bgBottom bgCenter"></div>
+                <!-- Background assets end -->
+            </section>
+            <section class="video">
+                <h2>Step-by step tutorial</h2>
+                <video controls poster="assets/video/thumbnail.png">
+                    <source src="assets/video/midjourney.mp4" type="video/mp4" />
+                </video>
+                <a href="transcript.xhtml" class="link">Show transcript</a>
+            </section>
+        </main>
+        <script src="javaScript/index.js"></script>
+    </body>
+</html>

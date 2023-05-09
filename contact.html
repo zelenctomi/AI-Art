@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <title>AI Art - Contact Me</title>
+    </head>
+    <body>
+        <a id="sr-only" href="#main-content">Jump to contents</a>
+        <!-- Only for screen readers -->
+        <header>
+            <!-- Mobile navigation start -->
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" value="false">
+                <span class="bar bar-top" data-visible="false"></span>
+                <span class="bar bar-center" data-visible="false"></span>
+                <span class="bar bar-bottom" data-visible="false"></span>
+            </button>
+            <div class="mobile-nav-side" data-visible="false"></div>
+            <!-- Closes the mobile navigation when clicked outside of the menu -->
+            <!-- Mobile navigation end -->
+            <nav id="primary-navigation" data-visible="false">
+                <a href="index.html">Home</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="create.html">Create Your Own</a>
+                <a href="contact.html" class="current">Contact Me</a>
+                <button class="hc-mode" value="false"></button>
+            </nav>
+        </header>
+
+        <main id="main-content" class="contact-main">
+            <!-- Background assets start -->
+            <div class="bg bgPurple bgTop bgLeft"></div>
+            <div class="bg bgBlue bgMiddle bgRight"></div>
+            <!-- Background assets end -->
+            <section class="grid">
+                <aside>
+                    <h1>Contact me</h1>
+                </aside>
+                <form class="contact-form" action="mailto:example@example.com" method="post" enctype="text/plain">
+                    <div class="row">
+                        <h2 class="form-header">What can I do for you?</h2>
+                    </div>
+                    <div class="row">
+                        <div class="wrapper">
+                            <input type="radio" id="inspiration" name="topic" value="INSPIRATION"/>
+                            <label class="custom-radio" for="inspiration">
+                                <span class="radio-text">INSPIRATION</span>
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <input type="radio" id="questions" name="topic" value="QUESTIONS"/>
+                            <label class="custom-radio" for="questions">
+                                <span class="radio-text">QUESTIONS</span>
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <input type="radio" id="idk" name="topic" value="IDK"/>
+                            <label class="custom-radio" for="idk">
+                                <span class="radio-text">IDK</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="text" id="name" name="name" placeholder="Your Name" maxlength="40" autocomplete="name" required/>
+                        <label for="name" class="custom-label one">Name</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" maxlength="40" autocomplete="email" required/>
+                        <label for="email" class="custom-label two">Email</label>
+                    </div>
+                    <div class="row">
+                        <textarea id="message" name="message" placeholder="Share your thoughts" rows="1" maxlength="75" required></textarea>
+                        <label for="message" class="custom-label three">Share your thoughts</label>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox" id="checkbox" name="checkbox" required/>
+                        <label for="checkbox">I have read and accept the Privacy Policy.</label>
+                    </div>
+                    <div class="row">
+                        <input type="submit" id="submit" name="submit" value="submit"/>
+                        <label for="submit" class="hidden"></label>
+                        <input type="reset" id="reset" name="reset" value=""/>
+                        <label for="reset" class="hidden"></label>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <script src="javaScript/index.js"></script>
+    </body>
+</html>

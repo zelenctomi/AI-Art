@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/print.css" media="print" />
+        <title>AI Art - Catalog</title>
+    </head>
+    <body>
+        <a id="sr-only" href="#main-content">Jump to contents</a>
+        <!-- Only for screen readers -->
+        <header>
+            <!-- Mobile navigation start -->
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" value="false">
+                <span class="bar bar-top" data-visible="false"></span>
+                <span class="bar bar-center" data-visible="false"></span>
+                <span class="bar bar-bottom" data-visible="false"></span>
+            </button>
+            <div class="mobile-nav-side" data-visible="false"></div>
+            <!-- Closes the mobile navigation when clicked outside of the menu -->
+            <!-- Mobile navigation end -->
+            <nav id="primary-navigation" data-visible="false">
+                <a href="index.html">Home</a>
+                <a href="catalog.html" class="current">Catalog</a>
+                <a href="create.html">Create Your Own</a>
+                <a href="contact.html">Contact Me</a>
+                <button class="hc-mode" value="false"></button>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <h1 class="centered catalog">Catalog</h1>
+            <!-- Background assets start -->
+            <div class="bg bgBlue bgTop bgLeft"></div>
+            <div class="bg bgPurple bgMiddle bgRight"></div>
+            <!-- Background assets end -->
+            <section class="gallery">
+                <div class="group">
+                    <h2 class="category">Cyberpunk</h2>
+                    <div class="picture-grid">
+                        <div class="picture">
+                            <img src="assets/gallery/cyberpunk1_400.png" alt="cyberpunk downtown" data-full-image="assets/gallery/cyberpunk1.png" />
+                            <div class="popup-prompt">/ Cyberpunk downtown, vibrant</div>
+                        </div>
+                        <div class="picture">
+                            <img src="assets/gallery/cyberpunk2_400.png" alt="cyberpunk chef" data-full-image="assets/gallery/cyberpunk2.png" />
+                            <div class="popup-prompt">/ Cyberpunk chef, making barbeque, vibrant</div>
+                        </div>
+                        <div class="picture">
+                            <img src="assets/gallery/cyberpunk3_400.png" alt="cyberpunk city" data-full-image="assets/gallery/cyberpunk3.png" />
+                            <div class="popup-prompt">/ Cyberpunk city, view from a skyscraper, sunset, vibrant, colorful, detailed</div>
+                        </div>
+                        <div class="picture">
+                            <img src="assets/gallery/cyberpunk4_400.png" alt="cyberpunk city" data-full-image="assets/gallery/cyberpunk4.png" />
+                            <div class="popup-prompt">/ Cyberpunk city, life in the sky, vibrant, detailed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <h2 class="category">Abstract</h2>
+                    <div class="picture-grid">
+                        <div class="picture">
+                            <img src="assets/gallery/abstract1_400.png" alt="abstract white smoke" data-full-image="assets/gallery/abstract1.png" />
+                            <div class="popup-prompt">/ White smoke, short podium, minimalism, simple, Abstract, dreamy landscape</div>
+                        </div>
+                        <div class="picture">
+                            <img src="assets/gallery/abstract2_400.png" alt="abstract formation" data-full-image="assets/gallery/abstract2.png" />
+                            <div class="popup-prompt">
+                                / Abstract piece that draws inspiration from nature, such as leaves, branches, or rock formations
+                            </div>
+                        </div>
+                        <div class="picture">
+                            <img src="assets/gallery/abstract3_400.png" alt="abstract formation, vivid" data-full-image="assets/gallery/abstract3.png" />
+                            <div class="popup-prompt">/ Abstract piece that captures the essence of vibrant and dynamic energy, vivid</div>
+                        </div>
+                        <div class="picture">
+                            <img src="assets/gallery/abstract4_400.png" alt="abstract gold smoke" data-full-image="assets/gallery/abstract4.png" />
+                            <div class="popup-prompt">
+                                / Gold smoke, abstract, minimalism, dreamy landscape, natural and soft color, studio photography, realistic
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <h2 class="category">Landscape</h2>
+                    <div class="picture-grid">
+                        <div class="picture">
+                            <img src="assets/gallery/landscape1_400.png" alt="landscape of vulcano" data-full-image="assets/gallery/landscape1.png" />
+                            <div class="popup-prompt">/ Vulcanic eruption, natural landscape, rainforest, detailed, water</div>
+                        </div>
+                        <div class="picture">
+                            <img src="assets/gallery/landscape2_400.png" alt="landscape of rainforest" data-full-image="assets/gallery/landscape2.png" />
+                            <div class="popup-prompt">
+                                / Rainforest, teeming with life and animals, colorful, exotic, highly detailed, clean weather, view from
+                                above
+                            </div>
+                        </div>
+                        <div class="picture">
+                            <img src="assets/gallery/landscape3_400.png" alt="landscape of highway on an ocean" data-full-image="assets/gallery/landscape3.png" />
+                            <div class="popup-prompt">/ Highway on the ocean, oil painting, storm</div>
+                        </div>
+                        <div class="picture">
+                            <img src="assets/gallery/landscape4_400.png" alt="landscape of a skyscraper" data-full-image="assets/gallery/landscape4.png" />
+                            <div class="popup-prompt">/ A skyscraper in a forest, sun in the distance, depth of field, hyper realistic</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="lightbox" class="lightbox hidden">
+                <div id="lightbox-image-holder" class="lightbox-image-holder">
+                    <img id="lightbox-image" class="lightbox-image" src="..." alt="..." />
+                    <button id="close-lightbox" class="close"></button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h3 class="centered">More coming soon...</h3>
+            <!-- Background assets start -->
+            <div class="bg bgPurple bgBottom bgCenter"></div>
+            <!-- Background assets end -->
+        </footer>
+        <script src="javaScript/index.js"></script>
+    </body>
+</html>

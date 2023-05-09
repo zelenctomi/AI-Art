@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/first.css" />
+        <link rel="stylesheet" href="css/slider.css" />
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <title>AI Art - Home</title>
+    </head>
+    <body>
+        <a id="sr-only" href="#main-content">Jump to contents</a>
+        <!-- Only for screen readers -->
+        <header>
+            <!-- Mobile navigation start -->
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" value="false">
+                <span class="bar bar-top" data-visible="false"></span>
+                <span class="bar bar-center" data-visible="false"></span>
+                <span class="bar bar-bottom" data-visible="false"></span>
+            </button>
+            <div class="mobile-nav-side" data-visible="false"></div>
+            <!-- Closes the mobile navigation when clicked outside of the menu -->
+            <!-- Mobile navigation end -->
+            <nav id="primary-navigation" data-visible="false">
+                <a href="index.html" class="current">Home</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="create.html">Create Your Own</a>
+                <a href="contact.html">Contact Me</a>
+                <button class="hc-mode" value="false"></button>
+            </nav>
+        </header>
+        <main id="main-content">
+            <!-- TITLE -->
+            <section>
+                <h1 class="title">AI Art</h1>
+                <figure>
+                    <img class="title-img" src="assets/titleCharacter.png" alt="ai generated cyberpunk character" />
+                    <figcaption>AI Artist</figcaption>
+                </figure>
+            </section>
+
+            <!-- FEATURED -->
+            <section class="featured">
+                <h2>Featured Images</h2>
+                <!-- Image slider start -->
+                <div class="slider">
+                    <aside class="slider-assets">
+                        <div class="numbers">
+                            <div class="number first-number">
+                                <img src="assets/slider/slideNumber1.svg" alt="number 1" />
+                            </div>
+                            <div class="number">
+                                <img src="assets/slider/slideNumber2.svg" alt="number 2" />
+                            </div>
+                            <div class="number">
+                                <img src="assets/slider/slideNumber3.svg" alt="number 3" />
+                            </div>
+                            <div class="number">
+                                <img src="assets/slider/slideNumber4.svg" alt="number 4" />
+                            </div>
+                        </div>
+
+                        <div class="prompts">
+                            <div class="prompt first-prompt">/ Highway on the ocean, oil painting, storm</div>
+                            <div class="prompt">/ Vulcanic eruption, natural landscape, rainforest, detailed, water</div>
+                            <div class="prompt">/ Cyberpunk chef, making barbeque, vibrant</div>
+                            <div class="prompt">/ Abstract piece that captures the essence of vibrant and dynamic energy, vivid</div>
+                        </div>
+
+                        <div class="buttons">
+                            <input type="radio" name="radio-btn" id="f1" />
+                            <input type="radio" name="radio-btn" id="f2" />
+                            <input type="radio" name="radio-btn" id="f3" />
+                            <input type="radio" name="radio-btn" id="f4" />
+                        </div>
+
+                        <a href="catalog.html">View More</a>
+                    </aside>
+                    <div class="slides">
+                        <!-- Slide images -->
+                        <div class="slide first-image">
+                            <img src="assets/gallery/landscape3.png" alt="Highway through the ocean" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/landscape1.png" alt="Vulcanic eruption" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/cyberpunk2.png" alt="Cyberpunk chef" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/abstract3.png" alt="An abstract piece" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Image slider end -->
+            </section>
+
+            <!-- HOW IT WORKS -->
+            <section>
+                <h2>How it works</h2>
+                <div class="card-stack">
+                    <article class="card">
+                        <h3>1.</h3>
+                        <h4>Training</h4>
+                        <p>AI models learn to create art by <b>analyzing</b> vast datasets of existing artworks and styles.</p>
+                    </article>
+                    <article class="card">
+                        <h3>2.</h3>
+                        <h4>Neural network</h4>
+                        <p>
+                            The AI leverages <b>neural networks</b> to synthesize and generate new, unique art pieces based on its learned
+                            knowledge.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>3.</h3>
+                        <h4>Iterative refinement</h4>
+                        <p>
+                            The AI model is fine-tuned through multiple training iterations and user feedback to <b>improve</b> the quality and
+                            creativity of the generated art.
+                        </p>
+                    </article>
+                </div>
+                <a href="https://interestingengineering.com/culture/what-is-ai-generated-art" class="link" target="_blank">Learn more...</a>
+            </section>
+        </main>
+
+        <script src="javaScript/index.js"></script>
+        <script src="javaScript/slider.js"></script>
+    </body>
+</html>
