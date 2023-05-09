@@ -772,6 +772,9 @@ input[type="reset"]:active { transform: rotate(180deg); }
 
     }
 
+    .one, .two { left: 0; }
+    .one { top: 1rem; }
+    .two { top: 6rem; }
     .bg { display: none; }
 
     /* Slight adjustments to the main content */
