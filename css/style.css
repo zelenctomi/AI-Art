@@ -747,6 +747,7 @@ input[type="reset"]:active { transform: rotate(180deg); }
     /* Create your own */
 
     .create-intro { margin: .2rem auto; width: 90vw; padding: 0; }
+    .create-intro h1 { max-width: 75vw; }
     .row { width: 90vw; }
     video { width: 90vw; }
 
@@ -771,9 +772,7 @@ input[type="reset"]:active { transform: rotate(180deg); }
 
     }
 
-    .one, .two { left: 0; }
-    .one { top: 1rem; }
-    .two { top: 6rem; }
+    .bg { display: none; }
 
     /* Slight adjustments to the main content */
 

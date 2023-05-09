@@ -83,6 +83,7 @@ figcaption {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 5rem;
+    max-width: 100%;
 }
 
 .card {
@@ -114,9 +115,18 @@ figcaption {
 
 /* Media queries */
 
-@media only screen and (max-height: 900px) {
+@media only screen and (min-height: 1000px) and (max-height: 1200px) {
+    header { margin-bottom: 25rem; }
+    /* .title { margin-block: 0; } */
+    .title-img { top: 0;}
+}
+
+
+
+@media only screen and (max-height: 800px) {
     header { margin-bottom:20rem; }
-    .title { margin-block: 5rem 0; }
+    .title { margin-block: 0; }
+    .title-img { top: -6rem;}
 }
 
 @media only screen and (max-width: 700px) {
