@@ -1,7 +1,6 @@
 /* Mobile navigation button */
 // dom content loaded
 document.addEventListener("DOMContentLoaded", () => {
-    
     const primaryNav = document.getElementById("primary-navigation");
     const navButton = document.querySelector(".mobile-nav-toggle");
     const primaryNavSide = document.querySelector(".mobile-nav-side");
@@ -45,12 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* Lightbox */
 
-    const images = document.querySelectorAll(".picture img");
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImage = document.getElementById("lightbox-image");
-    const closeLightbox = document.getElementById("close-lightbox");
+    if (window.location.href.split("/").at(-1) === "catalog.html") {
+        const images = document.querySelectorAll(".picture img");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightbox-image");
+        const closeLightbox = document.getElementById("close-lightbox");
 
-    if (lightbox) {
         images.forEach((image) => {
             image.addEventListener("click", () => {
                 const fullImageSrc = image.getAttribute("data-full-image");
