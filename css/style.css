@@ -269,6 +269,7 @@ footer { position: relative; }
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 0;
 }
 
 .create-intro h1 {
