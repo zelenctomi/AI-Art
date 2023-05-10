@@ -246,6 +246,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 45vw;
+    max-width: 1024px;
     aspect-ratio: 1 / 1;
 }
 
@@ -653,6 +654,9 @@ input[type="reset"]:active {
     .create-intro {
         width: 70vw;
     }
+
+    /* Lightbox */
+    .lightbox-image-holder { width: 80vw; }  
 }
 
 @media only screen and (max-width: 1200px) {
