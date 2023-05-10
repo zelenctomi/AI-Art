@@ -656,7 +656,9 @@ input[type="reset"]:active {
     }
 
     /* Lightbox */
-    .lightbox-image-holder { width: 80vw; }  
+    .lightbox-image-holder {
+        width: 60vw;
+    }  
 }
 
 @media only screen and (max-width: 1200px) {
@@ -682,6 +684,10 @@ input[type="reset"]:active {
         justify-items: center;
         width: 95vw;
     }
+
+    .lightbox-image-holder {
+        width: 80vw;
+    }  
 
     /* Create your own images */
 
