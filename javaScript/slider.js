@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Moves the slider
     function slide(index) {
+        disableButtonTemporarily();
+        changeCounter(index);
+
         const getCSSValue = (selector, prop) => parseFloat(window.getComputedStyle(document.querySelector(selector))[prop]);
         const slideDistance = getCSSValue(".slide", "width") + getCSSValue(".slide", "marginRight");
         const numberDistance = getCSSValue(".number", "width") + getCSSValue(".number", "marginRight");
@@ -44,4 +47,72 @@ document.addEventListener("DOMContentLoaded", () => {
             else console.log("Button " + (j + 1) + " is unchecked");
         }
     }
+
+    // Automatic navigaton for the slider
+    let counter = 2;
+    let auto = false;
+
+    startInterval();
+
+    function startInterval() {
+        interval = setInterval(function () {
+            const radioButton = document.getElementById("f" + counter);
+            radioButton.checked = true;
+            auto = true;
+
+            // Create and dispatch the 'change' event
+            const changeEvent = new Event("click");
+            radioButton.dispatchEvent(changeEvent);
+
+            // For debugging
+            console.log("Interval executed: " + counter);
+
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 6000);
+    }
+
+    // Change counter if the button is triggered manually
+    function changeCounter(index) {
+        clearInterval(interval);
+        if (auto === true) {
+            counter = index;
+        } else {
+            counter = index === 4 ? 1 : index + 1;
+        }
+        auto = false;
+        startInterval();
+    }
+
+    // To avoid spamming the buttons
+    function disableButtonTemporarily() {
+        sliderButtons.forEach((button) => (button.disabled = true));
+        // Re-enable the radio button after 2s
+        setTimeout(() => {
+            sliderButtons.forEach((button) => (button.disabled = false));
+        }, 2000);
+    }
+
+    /* Resize event */
+
+    let resizeTimeout;
+
+    function handleResize() {
+        console.log('Window stopped resizing');
+        // Perform your layout adjustments or other actions here
+        const radioButton = document.getElementById("f" + counter);
+        radioButton.checked = true;
+        auto = true;
+
+        // Create and dispatch the 'change' event
+        const changeEvent = new Event("click");
+        radioButton.dispatchEvent(changeEvent);
+    }
+
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(handleResize, 500);
+    });
 });
